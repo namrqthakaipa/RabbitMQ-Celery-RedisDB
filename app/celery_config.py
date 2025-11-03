@@ -32,6 +32,6 @@ celery_app.conf.beat_schedule = {
     },
     'generate-daily-report': {
         'task': 'app.tasks.generate_report',
-        'schedule': crontab(hour=9, minute=0),  # Every day at 9 AM
+        'schedule': crontab(hour=9, minute=0),  # Every day 
     },
 }
